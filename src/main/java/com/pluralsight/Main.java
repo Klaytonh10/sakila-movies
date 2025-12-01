@@ -2,7 +2,6 @@ package com.pluralsight;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
