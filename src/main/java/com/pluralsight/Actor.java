@@ -1,17 +1,23 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
-
 public class Actor {
 
+    private int actorID;
     private String firstName;
     private String lastName;
-    private ArrayList<Movie> movies;
 
-    public Actor(String firstName, String lastName) {
+    public Actor(int actorID, String firstName, String lastName) {
+        this.actorID = actorID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.movies = new ArrayList<>();
+    }
+
+    public int getActorID() {
+        return actorID;
+    }
+
+    public void setActorID(int actorID) {
+        this.actorID = actorID;
     }
 
     public void setFirstName(String firstName) {
@@ -22,19 +28,11 @@ public class Actor {
         this.lastName = lastName;
     }
 
-    public void addMovie(Movie movie) {
-        this.movies.add(movie);
-    }
-
     public String getFirstName() {
         return firstName;
     }
 
     public String getLastName() {
         return lastName;
-    }
-
-    public ArrayList<Movie> getMovies() {
-        return movies;
     }
 }
